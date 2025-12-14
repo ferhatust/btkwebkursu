@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferhat Üstündağ | Anasayfa</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Times New Roman", serif;
+            background: linear-gradient(135deg, #1e1e2f, #3a0ca3);
+            color: white;
+            text-align: center;
+        }
+
+        /* Menü */
+        nav {
+            background-color: rgba(0,0,0,0.4);
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 20px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: gold;
+            text-shadow: 0 0 10px gold;
+        }
+
+        /* Başlık */
+        h1 {
+            font-size: 60px;
+            color: #ff4d6d;
+            animation: glow 2s infinite alternate;
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px #ff4d6d;
+            }
+            to {
+                text-shadow: 0 0 30px #ffd166;
+            }
+        }
+
+        /* Akan isim */
+        .marquee {
+            font-size: 50px;
+            font-weight: bold;
+            color: #cdb4db;
+            margin: 20px 0;
+        }
+
+        /* Buton */
+        button {
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            background: #ffd166;
+            color: black;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #ff4d6d;
+            color: white;
+            transform: scale(1.1);
+        }
+
+        footer {
+            margin-top: 50px;
+            font-size: 14px;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="hakkimda.html">Hakkımda</a>
+        <a href="islerim.html">Portföy</a>
+        <a href="iletisim.html">İletişim</a>
+    </nav>
+
+    <h1>Anasayfa</h1>
+
+    <marquee class="marquee" direction="right">FERHAT ÜSTÜNDAĞ</marquee>
+    <marquee class="marquee" direction="left">FERHAT ÜSTÜNDAĞ</marquee>
+
+    <p style="font-size:22px;">
+        Elektrik Elektronik Mühendisliği öğrencisi <br>
+        💻 Yazılım | 📊 Borsa | 🚀 Girişim
+    </p>
+
+    <br>
+
+    <button onclick="selamla()">Bana Tıkla 😎</button>
+
+    <footer>
+        © 2025 Ferhat Üstündağ | Kişisel Web Sitesi
+    </footer>
+
+    <script>
+        function selamla() {
+            alert("Hoş geldin! 🚀 Ferhat’ın sitesindesin 😄");
+        }
+    </script>
+
+</body>
+</html>
